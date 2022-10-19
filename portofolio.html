@@ -15,67 +15,65 @@
         }body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        /* navbar CSS */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 15px 100px;
-            background: #fff;
-            box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            transition: 0.5s;
-        }
-        ul {
-             display: flex;
+         /* navbar CSS */
+
+         nav ul {
+            margin-top: -10px;
+            margin-right: -9px;
+            margin-left: -9px;
+            background-color: #00bfff;
+
         }
 
-        ul li a{
-            padding: 10px 25px;
-            color: var(--second-color);
-            border-radius: 2px;
-            font-weight: 600;
-            letter-spacing: 1.5px;
+        ul  {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+            }
+
+        li {
+        float: left;
         }
 
-        ul li a:hover{
-            background: var(--second-color);
-            color: var(--main-color);
-            border: none;
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
         }
-        /* colors */
-        :root{
-            --main-color: #f5b041;
-            --second-color: #212f3d;
+
+        li a:hover:not(.active) {
+        background-color: #111;
         }
+
+        .active {
+        background-color: #006eff;
+        }
+        
         .all{
-            margin-top: 100px;
-        }
+            margin-top: 40px;
+                }
+        .klo {
+            margin-left: 20px;
+                }     
     </style>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 
-<body bgcolor="F2AD9F">
+<body bgcolor="d3d3d3">
         <!-- navbar -->
-        <nav>
-
-            <a href="#" class="logo"> SYEVI</a>
-            <div class="toggle"></div>
-    
-        <!-- menu -->
-        <ul class="menu">
-    
-            <li> <a href="#"> Home</a></li>
-            <li> <a href="#"> Biodata</a></li>
-            <li> <a href="#"> Portofolio</a></li>
-            <li> <a href="#"> Work</a></li>
-            
-        </ul>
+       <!-- navbar -->
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
         </nav>
         </style>
     
